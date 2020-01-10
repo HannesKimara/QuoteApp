@@ -1,0 +1,15 @@
+#qa-container{
+    width: 60%;
+    transition: width 0.8s;
+}
+
+.qa-vc{
+    margin:auto;
+}
+
+@media only screen and (max-width: 768px){
+    #qa-container {
+        width:100%;
+        transition: width 0.6s;
+    }
+}

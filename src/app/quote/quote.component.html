@@ -1,1 +1,13 @@
-<p>quote works!</p>
+<div class = "">
+    <div *ngFor = "let quote of quotes; let i = index">
+        <div class = "w3-container">
+            <div>
+                <div class = "w3-card qa-card w3-padding">
+                    <div>
+                        <p>"{{ quote.quoteText }}" - {{ quote.quoteAuthor | titlecase}}</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
