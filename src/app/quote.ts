@@ -4,7 +4,7 @@ export class Quote {
     downvotes:number;
     upvotes: number;
     constructor(public id: number, public quoteAuthor: string, public quotePoster: string, public quoteText: string, public entryDateTime: Date){
-        this.descriptionVisible=false;
+        this.descriptionVisible=true;
         this.votes=0;
         this.downvotes=0;
         this.upvotes=0;

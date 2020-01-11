@@ -10,4 +10,9 @@
             </div>
         </div>
     </div>
+    <div *ngIf = "quotes.length === 0" class = "w3-container">
+        <div class = "w3-card qa-card w3-padding">
+            <p>You have no quotes. Add new below.</p>
+        </div>
+    </div>
 </div>
