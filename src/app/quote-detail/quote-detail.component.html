@@ -1,1 +1,11 @@
-<p>quote-detail works!</p>
+<div class = "w3-row w3-display-inline">
+    <div id = "vote-area" class = "w3-left">
+        <br>
+        <span class = "">-</span>
+        <span class = ""> {{quote.votes}} </span>
+        <span class = "">+</span>
+    </div>
+    <div id = "name-date-area" class = "w3-right">
+        <span class = "">{{quote.quotePoster}}<br>{{quote.entryDateTime | date}}</span>
+    </div>
+</div>

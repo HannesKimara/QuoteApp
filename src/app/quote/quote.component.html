@@ -6,6 +6,7 @@
                     <div>
                         <p>"{{ quote.quoteText }}" - {{ quote.quoteAuthor | titlecase}}</p>
                     </div>
+                    <app-quote-detail [quote]='quote'></app-quote-detail>
                 </div>    
             </div>
         </div>
@@ -15,4 +16,5 @@
             <p>You have no quotes. Add new below.</p>
         </div>
     </div>
+    <app-quote-form></app-quote-form>
 </div>
