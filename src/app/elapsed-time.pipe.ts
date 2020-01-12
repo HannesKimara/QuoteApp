@@ -14,7 +14,7 @@ export class ElapsedTimePipe implements PipeTransform {
     if (dtDifference < 60) {
       return "About a minute ago";
     } else if (dtDifference < 3600 && dtDifference>60){
-      return `${Math.round(dtDifference / 60)} minutes ago`;
+      return `${Math.round(dtDifference / 60)} min ago`;
     } else if (dtDifference > 3600 && dtDifference < 86400){
       return `${Math.round(dtDifference / 3600)} hours ago`;
     }

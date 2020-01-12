@@ -11,6 +11,22 @@ export class QuoteComponent implements OnInit {
     new Quote(1, 'Commissioner', 'Hannes Kimara', 'Like a rat in a trap', new Date())
   ];
   
+  upVote(index){
+    let currUpVotes = this.quotes[index].upvotes;
+    currUpVotes = currUpVotes+1;
+    let currDownVotes = this.quotes[index].downvotes;
+    this.quotes[index].votes = currUpVotes - currDownVotes;
+    this.quotes[index].upvotes = currUpVotes
+  }
+
+  downVote(index){
+    let currUpVotes = this.quotes[index].upvotes;
+    let currDownVotes = this.quotes[index].downvotes;
+    currDownVotes = currDownVotes+1;
+    this.quotes[index].votes = currUpVotes - currDownVotes;
+    this.quotes[index].downvotes = currDownVotes;
+  }
+
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength++;

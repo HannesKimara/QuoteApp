@@ -6,7 +6,7 @@
                     <div>
                         <p>"{{ quote.quoteText }}" - {{ quote.quoteAuthor | titlecase}}</p>
                     </div>
-                    <app-quote-detail [quote]='quote'></app-quote-detail>
+                    <app-quote-detail [quote]='quote' (downvoted) = "downVote(i)" (upvoted)="upVote(i)"></app-quote-detail>
                 </div>    
             </div>
         </div>

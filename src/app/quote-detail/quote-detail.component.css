@@ -1,0 +1,21 @@
+.qa-fas-vote{
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+#qa-vote-down:hover{
+    padding-left: 3px;
+    padding-right: 7px;
+    transition: padding 0.3s;
+}
+
+#qa-vote-up:hover{
+    padding-left: 7px;
+    padding-right: 3px;
+    transition: padding 0.3s;
+}
+
+.qa-no-user-select{
+    user-select: none;
+}
