@@ -7,7 +7,9 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes:Quote[] = [];
+  quotes:Quote[] = [
+    new Quote(1, 'Commissioner', 'Hannes Kimara', 'Like a rat in a trap', new Date())
+  ];
   
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
