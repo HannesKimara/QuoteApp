@@ -20,6 +20,8 @@ Open in editor by running
 
 `$ code .`
 
+Or visit the live version [here](https://hanneskimara.github.io/QuoteApp/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
