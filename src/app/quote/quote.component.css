@@ -5,3 +5,7 @@
     box-shadow: none;
     width:100%;
 }
+
+#qa-del-btn{
+    cursor: pointer;
+}

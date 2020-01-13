@@ -3,6 +3,11 @@
         <div class = "w3-container">
             <div>
                 <div class = "w3-card qa-card w3-padding">
+                    <div class = "w3-row">
+                        <div class = "w3-right">
+                            <i id = "qa-del-btn" (click) = 'deleteQuote(i)' class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
                     <div>
                         <p>"{{ quote.quoteText }}" - {{ quote.quoteAuthor | titlecase}}</p>
                     </div>

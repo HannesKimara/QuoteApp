@@ -7,8 +7,17 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes:Quote[] =[];
+  quotes:Quote[] = [];
   
+  deleteQuote(index){
+    let toDelete = confirm(`Are you sure you want to delete?`);
+    if (toDelete){
+      this.quotes.splice(index,1);
+    } else {
+      //pass
+    }
+  }
+
   upVote(index){
     let currUpVotes = this.quotes[index].upvotes;
     currUpVotes = currUpVotes+1;
