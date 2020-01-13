@@ -7,9 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes:Quote[] = [
-    new Quote(1, 'Commissioner', 'Hannes Kimara', 'Like a rat in a trap', new Date())
-  ];
+  quotes:Quote[] =[];
   
   upVote(index){
     let currUpVotes = this.quotes[index].upvotes;

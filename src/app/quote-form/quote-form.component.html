@@ -1,5 +1,5 @@
 <div class = "card">
-    <form class = "w3-margin" #quoteForm = 'ngForm'>
+    <form class = "w3-margin" (ngSubmit) = 'submitQuote()' #quoteForm = 'ngForm'>
         <div class = "w3-row-padding">
             <div class = "w3-half">
                 <input type = "text" class = "w3-input qa-input" placeholder = "Author" id = "quoteAuthor" [(ngModel)]="newQuote.quoteAuthor" name = "quoteAuthor" #quoteAuthor='ngModel' required>
