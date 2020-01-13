@@ -2,14 +2,14 @@
     <form class = "w3-margin" (ngSubmit) = 'submitQuote()' #quoteForm = 'ngForm'>
         <div class = "w3-row-padding">
             <div class = "w3-half">
-                <input type = "text" [ngClass] = "{'qa-input-invalid': !quoteAuthor.value && !quoteAuthor.pristine, 'qa-input-error': !quoteAuthor.value && !quoteAuthor.pristine}" class = "w3-input qa-input" placeholder = "Author" id = "quoteAuthor" [(ngModel)]="newQuote.quoteAuthor" name = "quoteAuthor" #quoteAuthor='ngModel' required>
+                <input type = "text" class = "w3-input qa-input" placeholder = "Author" id = "quoteAuthor" [(ngModel)]="newQuote.quoteAuthor" name = "quoteAuthor" #quoteAuthor='ngModel' required>
             </div>
             <div class = "w3-half">
-                <input type = "text" [ngClass] = "{'qa-input-invalid': !quotePoster.value && !quotePoster.pristine, 'qa-input-error': !quotePoster.value && !quotePoster.pristine}" class = "w3-input qa-input" placeholder = "Posted By" [(ngModel)]="newQuote.quotePoster" id = "quotePoster" name = "quotePoster" #quotePoster='ngModel' required>
+                <input type = "text" class = "w3-input qa-input" placeholder = "Posted By" [(ngModel)]="newQuote.quotePoster" id = "quotePoster" name = "quotePoster" #quotePoster='ngModel' required>
             </div>
         </div>
         <div class = "w3-row-padding w3-padding">
-            <textarea type = "text" [ngClass] = "{'qa-input-invalid': !quoteText.value && !quoteText.pristine, 'qa-input-error': !quoteText.value && !quoteText.pristine}" class = "w3-input qa-input" placeholder = "Quote" [(ngModel)]="newQuote.quoteText" id = "quoteText" name = "quoteText" style="resize:none;" #quoteText='ngModel' required></textarea>
+            <textarea type = "text" class = "w3-input qa-input" placeholder = "Quote" [(ngModel)]="newQuote.quoteText" id = "quoteText" name = "quoteText" style="resize:none;" #quoteText='ngModel' required></textarea>
         </div>
         <div class = "w3-row-padding w3-padding">
             <button [disabled] = "!quotePoster.value || !quoteText.value || !quoteAuthor.value" type = "submit" class = "w3-button w3-border w3-border-black w3-right" style = "margin-bottom: 15px;">ADD QUOTE</button>
