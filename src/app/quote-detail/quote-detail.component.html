@@ -1,9 +1,9 @@
 <div class = "w3-row w3-display-inline">
     <div id = "vote-area" class = "w3-left" style = "font-size: 16px;">
         <br>
-        <span id = "qa-vote-down" class = "qa-fas-vote" (click)='downvoteStarted()'><i class="fas fa-chevron-left"></i></span>
+        <span id = "qa-vote-down" class = "qa-fas-vote" (click)='downvoteStarted()'><i class="fas fa-thumbs-down"></i></span>
         <span class = "qa-no-user-select">  {{quote.votes}}  </span>
-        <span id = "qa-vote-up" class = "qa-fas-vote" (click)='upvoteStarted()'><i class="fas fa-chevron-right"></i></span>
+        <span id = "qa-vote-up" class = "qa-fas-vote" (click)='upvoteStarted()'><i class="fas fa-thumbs-up"></i></span>
     </div>
     <div id = "name-date-area" class = "w3-right">
         <span class = "">{{quote.quotePoster}}<br>{{quote.entryDateTime | elapsedTime}}</span>
