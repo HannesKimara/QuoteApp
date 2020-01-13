@@ -11,3 +11,7 @@
 .qa-input-invalid{
     border-bottom: 2px solid red;
 }
+
+.qa-input-error:focus{
+    border-bottom: 2px solid red;
+}
