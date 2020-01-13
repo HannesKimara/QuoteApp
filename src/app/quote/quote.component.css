@@ -9,3 +9,19 @@
 #qa-del-btn{
     cursor: pointer;
 }
+
+#qa-del-btn:hover{
+    animation: binshake .5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes binshake {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(10deg); }
+    30% { transform: rotate(-10deg); }
+    45% { transform: rotate(8deg); }
+    60% { transform: rotate(-8deg); }
+    75% { transform: rotate(4deg); }
+    85% { transform: rotate(-4deg); }
+    92% { transform: rotate(2deg); }
+    100% { transform: rotate(0); }
+}
