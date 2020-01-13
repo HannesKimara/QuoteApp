@@ -8,6 +8,7 @@
 
 #qa-del-btn{
     cursor: pointer;
+    display:inline-block;
 }
 
 #qa-del-btn:hover{
@@ -25,3 +26,21 @@
     92% { transform: rotate(2deg); }
     100% { transform: rotate(0); }
 }
+
+#qa-del-btn:hover + .tooltiptext {
+    visibility: visible;
+  }
+
+.tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    width: 70px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    display:block;
+
+    position:absolute;
+    z-index: 1;
+}
+ 
