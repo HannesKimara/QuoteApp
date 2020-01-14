@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/9e9653e3-fff9-471c-b528-8232d2a4048a)](https://codebeat.co/projects/github-com-hanneskimara-quoteapp-master)
+
 # QuoteApp
 
 Quote App bulit in Angular 8.2.14
